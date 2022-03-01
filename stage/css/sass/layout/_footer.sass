@@ -1,0 +1,90 @@
+footer
+    background-color: #004a61
+    padding: 2rem 0rem
+    color: #fff
+    direction: rtl
+    background-image: url('../img/footerbg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    .bg_ex
+        position: absolute
+        top: -63%
+        left: -18%
+        width: 485px
+    .logo_content
+        display: flex
+        width: 100%
+        align-items: center
+        margin-bottom: 1rem
+        img
+            width: 47%
+            @media (max-width: $tablet)
+                width: 100px
+        .to_up_btn
+            border: none
+            outline: none
+            border: 1px solid #fff
+            background: #fff
+            border-radius: 50%
+            width: 40px
+            height: 40px
+            padding: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+            @media (max-width: $tablet)
+                width: 30px
+                height: 30px
+            img
+                width: 47%
+    ul
+        display: flex
+        flex-direction: column
+        text-align: right
+        align-items: flex-start
+        list-style: none
+        flex-wrap: wrap
+        @media (max-width: $tablet)
+            display: block
+            padding-top: 2rem
+            li
+                margin-bottom: 1rem
+        .social_links
+            display: flex
+            flex: 1 1 auto
+            width: 100%
+            a
+                border: 2px solid $second_color
+                padding: 7px 10px
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 8px
+                background-color: transparent
+                margin: 0px 10px
+                i
+                    color: $second_color
+                    font-size: 20px
+                &:hover
+                    background-color: $second_color
+                    i
+                        color: #fff
+        a
+            text-decoration: none
+            color: #fff
+            font-size: 18px
+            @include mainTransition
+            @media (max-width: $tablet)
+                font-size: 16px
+            &:hover
+                color: #c1972f
+        i
+            font-size: 2rem
+            @media (max-width: $tablet)
+                font-size: 1.7rem
+        .title
+            color: $fifth_color
+    p
+        text-align: center
+        margin-top: 2rem

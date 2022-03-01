@@ -1,0 +1,176 @@
+.candidates
+    background: $main_color
+    color: $fouth_color
+    direction: rtl
+    padding: 2rem 0rem
+    background-image: url('../img/cardit_bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    .card
+        direction: rtl
+        transform-style: preserve-3d
+        @include mainTransition
+        color: inherit
+        background: #0c4a66 !important
+        border: 1px solid transparent
+        box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+        position: relative
+        &:hover
+            transform: rotateY(180deg)
+        .front
+            backface-visibility: hidden
+            // position: absolute
+            width: 100%
+            height: 100%
+
+        .back
+            position: absolute
+            width: 100%
+            height: 100%
+            backface-visibility: hidden
+            transform: rotateY(180deg)
+            background: transparent
+            .content
+                background-image: url('../img/b7.png')
+                background-size: cover
+                background-repeat: no-repeat
+                background-color: $body_bgColor
+                padding: 15px 5px
+                color: #000
+                text-align: right
+                border-radius: 15px
+                padding: 1rem
+                .title
+                    color: $fifth_color
+                    font-size: 22px
+                    font-weight: 600
+                .desc
+                    color: #000
+                    font-size: 19px
+                    margin: 0rem
+                    margin-top: 10px
+                    height: 199px
+                    overflow: hidden
+                .card-body
+                    padding: 0rem
+                .view_candidate_info
+                    justify-content: flex-end
+                    color: #a78a41
+                    font-size: 19px
+                    button
+                        margin-right: 10px
+                        padding: 5px 8px
+                        transform: rotate(-90deg)
+                        color: #04374a
+                        border: 2px solid #D3BA7B
+                        box-shadow: none
+                .card-footer
+                    padding-top: 2rem
+                    border-top: none
+    .card_container
+        padding: 5px
+        .card-top
+            display: flex
+            flex-direction: row
+        .card_left
+            flex: 0 1 auto
+            background: #04374A
+            display: flex
+            align-items: center
+            justify-content: center
+            min-width: 45px
+            h6
+                transform: rotate(-90deg) scale(2)
+                font-size: 8px
+                margin: 0rem
+        .card_right
+            flex: 1 1 auto
+            position: relative
+            .candidate_img
+                position: absolute
+                width: 82%
+                bottom: 0
+                left: 0px
+                right: 29px
+        .card-footer
+            margin-top: 2rem
+            background: #fff
+            color: #000
+        @media (max-width: $tablet)
+            font-size: 19px !important
+    .card
+        margin-top: 1rem
+        .candidate-number
+            position: absolute
+            background: #c4a06c
+            font-size: 33px
+            min-width: 47px
+            min-height: 47px
+            transform: rotate(45deg)
+            bottom: 20px
+            right: -23px
+            color: $main_color
+            font-weight: 600
+            box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+            span
+                transform: rotate(-45deg)
+                display: block
+        .card_right
+            position: relative
+        .card-footer
+            display: flex
+            align-items: center
+            border-radius: 0px
+            padding: 1rem
+            background: $body_bgColor
+            cursor: pointer
+            .view_candidate_info
+                flex: 1 1 auto
+                color: #0c4a66
+                font-size: 20px
+                text-decoration: none
+                font-weight: 600
+                display: flex
+                align-items: center
+                justify-content: space-between
+            button
+                padding: 9px 13px
+                border-radius: 50%
+                transform: rotate(-45deg)
+                background: transparent
+                border: 1px solid $second_color
+                color: #0c4a66
+    .about_info
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        margin-top: 1rem
+        background: $body_bgColor
+        background-image: url('../img/bg3.png')
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 1rem
+        color: #000
+        font-weight: 600
+        border-radius: 4px
+        .table-title
+            color: $fifth_color
+            font-size: 20px
+            margin-bottom: 10px
+    .vote_now
+        padding: 9px 22px
+        margin: 1rem auto
+        align-items: center
+        justify-content: center
+        border-radius: 7px
+        column-gap: 9px
+        font-weight: 700
+        background: #D3BA7B
+        color: #0C4A66
+        border: 1px solid #D3BA7B
+        &:hover
+            border: 1px solid #0C4A66
+            background: #0C4A66
+            color: #fff
+        .icon
+            display: flex

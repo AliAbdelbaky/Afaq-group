@@ -1,0 +1,47 @@
+.afaqGroup
+    background-color: #fff
+    padding-top: 2rem
+    direction: rtl
+    .card
+        border: none
+        background: transparent
+        .card-top
+            overflow: hidden
+            position: relative
+            border-radius: 30px
+            a
+                img
+                    width: 100%
+                    transform: scale(1.1)
+                    position: relative
+                i
+                    position: absolute
+                    top: 50%
+                    font-size: 4rem
+                    color: #fff
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    z-index: 3333
+                    border-radius: 50%
+                    @include mainTransition
+                    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+                &:hover
+                    i
+                        color: $second_color
+            .overlay
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                background-color: #00000067
+        .card-footer
+            background: transparent
+            border: none
+            padding: 20px 0px
+            a
+                color: $main_color
+                text-decoration: none
+                font-weight: 600
+                font-size: 20px
+                text-align: center

@@ -1,0 +1,37 @@
+-var PageTitle = "آفاق | الصفحة الرئيسية"
+doctype html
+html(lang="en")
+    head
+        //- styles
+        include layout/meta.pug
+
+        include layout/styles.pug
+        script(src="./js/formValidation.js") 
+    body 
+        include ./components/homepage/_nav.pug
+        //- header
+        include ./components/homepage/_header.pug
+        //- candidtates section
+        include ./components/homepage/_candidates.pug
+        //- Brief section
+        include ./components/homepage/_brief.pug
+        //- electoral program news section
+        include ./components/homepage/_electoral_program.pug
+        //- electoral targets   
+        include ./components/homepage/_electoral_target.pug
+        //- afaq group 
+        include ./components/homepage/_afaqGroup.pug
+        //- afaq tweets
+        include ./components/homepage/_tweets.pug
+        //-  campaign news 
+        include ./components/homepage/_ campaignNews.pug
+        //- campian Activites
+        include ./components/homepage/_campianActivites.pug 
+        //- event Details 
+        include ./components/homepage/_eventDetails.pug
+        //- tech support 
+        include ./components/homepage/_tech_support.pug
+        //- footer
+        include ./components/homepage/_footer.pug
+        //-scripts
+        include layout/scripts

@@ -1,0 +1,54 @@
+*
+    margin: 0rem
+    padding: 0rem
+    box-sizing: border-box
+body
+    // background-color: $body_bgColor
+    font-family: 'Tajawal', sans-serif
+    padding: 0rem
+    margin: 0rem
+    direction: ltr
+button
+    border: 1px solid $button-bg
+    background: $button-bg
+    color: $button-color
+    outline: none
+    font-size: 17px
+    display: flex
+    align-items: center
+    font-weight: 500
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+    @include mainTransition
+    &:hover
+        background: $button-hoverbg
+        color: $button-hoverColor
+        border: 1px solid $button-hoverbg
+.main_sec_title
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: fit-content
+    margin: 0rem auto 2rem
+    color: $fifth_color
+    span
+        margin: 0px 10px
+    .left
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+.subtitle
+    font-size: 15px
+::-webkit-scrollbar
+    width: 10px
+
+/* Track */
+::-webkit-scrollbar-track
+    background: #f1f1f1
+    border-radius: 5px
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: $main_color
+    border-radius: 5px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+    background: #555

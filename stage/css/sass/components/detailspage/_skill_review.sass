@@ -1,0 +1,189 @@
+.skill_review
+    padding: 2rem
+    direction: rtl
+    position: relative
+    padding-bottom: 18rem
+    .main-title
+        color: $main_color
+        font-weight: 500
+        position: relative
+        font-size: 32px
+        margin-top: 2rem
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            width: 40px
+            background-color: #D6D7D9
+            z-index: -1
+        .text
+            z-index: 1
+    .skill-review-items
+        padding: 0rem
+        .item
+            position: relative
+            padding-right: 40px
+            margin-top: 1rem
+            font-weight: 600
+            &.desc
+                padding-right: 0px
+                &::after
+                    display: none
+            &::after
+                content: attr(data-sort)
+                position: absolute
+                color: $fouth_color
+                top: 17%
+                right: 0
+                bottom: 0
+                width: 27px
+                height: 30px
+                background: $main_color
+                padding: 1px 5px
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 18px
+                font-weight: 600
+                box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+                border-radius: 3px
+            .text
+                color: #000
+                font-size: 20px
+                position: relative
+                // &::after
+                //     content: ''
+                //     position: absolute
+                //     top: 50%
+                //     right: -17px
+                //     width: 13px
+                //     height: 2px
+                //     background: $main_color
+    .goals
+        .title
+            text-align: center
+            color: $main_color
+            padding: 0.7rem 0rem
+            margin: 2rem 0rem
+            background-color: #D6D7D9
+        .goal-list
+            .goal-item
+                display: flex
+                align-items: center
+                margin-top: 3rem
+                .number
+                    background-color: #BFBFBF
+                    min-width: 45px
+                    min-height: 45px
+                    display: block
+                    margin-left: 2rem
+                    transform: rotate(45deg)
+                    position: relative
+                    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+
+                    &::after
+                        content: attr(data-sort)
+                        position: absolute
+                        color: $main_color
+                        font-weight: 600
+                        font-size: 1.5rem
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%) rotate(-45deg)
+                    &::before
+                        content: ''
+                        background-color: $main_color
+                        width: 10px
+                        height: 10px
+                        position: absolute
+                        left: 0
+                        bottom: 0
+
+                .text
+                    margin: 0rem
+                    font-weight: 600
+                    color: $main_color
+                    font-size: 1.5rem
+    .side_footer
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        pointer-events: none
+        .icon_container
+            direction: ltr
+            .vertical
+                display: flex
+                flex-direction: column
+                .icon
+                    width: 100px
+                    height: 100px
+                    min-width: 100px
+                    min-height: 100px
+                    // background: #000
+                    background-repeat: no-repeat
+                    background-size: cover
+                    &:nth-child(1)
+                        background-image: url('../img/icons/icon1.png')
+                        // background-color: #dad9d9
+                    &:nth-child(2)
+                        background-image: url('../img/icons/icon2.png')
+                    &:nth-child(3)
+                        background-image: url('../img/icons/icon3.png')
+                    &:nth-child(4)
+                        background-image: url('../img/icons/icon4.png')
+                    &:nth-child(5)
+                        background-image: url('../img/icons/icon5.png')
+                    &:nth-child(6)
+                        background-image: url('../img/icons/icon6.png')
+                    &:nth-child(7)
+                        background-image: url('../img/icons/icon7.png')
+                    &:nth-child(8)
+                        background-image: url('../img/icons/icon8.png')
+                    &:nth-child(9)
+                        background-image: url('../img/icons/icon9.png')
+            .horizontal
+                display: flex
+                flex-direction: row
+                .icon
+                    width: 100px
+                    height: 100px
+                    min-width: 100px
+                    min-height: 100px
+                    // background: #000
+                    background-repeat: no-repeat
+                    background-size: cover
+                    &:nth-child(1)
+                        background-image: url('../img/icons/icon10.png')
+                    &:nth-child(2)
+                        background-image: url('../img/icons/icon11.png')
+                    &:nth-child(3)
+                        background-image: url('../img/icons/icon12.png')
+                    &:nth-child(4)
+                        background-image: url('../img/icons/icon13.png')
+                    &:nth-child(5)
+                        background-image: url('../img/icons/icon5.png')
+                    &:nth-child(6)
+                        background-image: url('../img/icons/icon14.png')
+                        flex: 1 1 auto
+                        background-size: contain
+                        max-width: 300px
+                        background-color: #fff
+                        background-position: center
+                    &:nth-child(7)
+                        flex: 1 1 auto
+                        background-color: $main_color
+                        font-size: 35px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        span
+                            display: flex
+                            flex-direction: row-reverse
+                            color: #fff
+                            .highligh
+                                color: $fifth_color
+                    &:nth-child(8)
+                        background-image: url('../img/icons/icon16.png')

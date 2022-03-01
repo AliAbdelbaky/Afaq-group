@@ -1,0 +1,29 @@
+section.tech_support
+    .container
+        .row 
+            .col-md-6
+                .form_container
+                    h2.title الدعم الفني
+                    h5.subtitle يرجى كتابة وتوضيح برسالتك المشكلة بالتحديد حتى نقدم المساعدة
+                    form(name='myForm' action='' onsubmit='return validateForm()' method='post')
+                        .container-fluid 
+                            .row 
+                                .col-md-6
+                                    .input_container
+                                        label(class="form-label" for="username") الاسم
+                                        input(class="form-control" type='text' id="username" name='username')
+                                .col-md-6
+                                    .input_container
+                                        label(class="form-label" for="phoneNumber") رقم الجوال
+                                        input(class="form-control" type='text' id="phoneNumber" name='phoneNumber')
+                                .col-md-12
+                                    .input_container
+                                        label(class="form-label" for="msgTitle") عنوان الرسالة
+                                        input(class="form-control" type='text' id="msgTitle" name='msgTitle')
+                                .col-md-12
+                                    .input_container
+                                        label(class="form-label" for="msgDesc") محتوى الرسالة
+                                        textarea(class="form-control" cols="30", rows="10" id="msgDesc" name='msgDesc')
+                        button(type='submit') ارسال
+            .col-md-6
+                img(src="./img/techSupport.svg" alt="")

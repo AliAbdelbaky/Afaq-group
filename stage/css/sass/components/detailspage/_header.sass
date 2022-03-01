@@ -1,0 +1,96 @@
+.secHeader
+    background-color: #004A61
+    direction: rtl
+    padding: 1rem
+    .candidates_card
+        background-image: url('../img/cardintate_card_bg.png')
+        background-repeat: no-repeat
+        background-size: contain
+        width: 22rem
+        height: 30.5rem
+        .userpic
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 18rem
+    .logo
+        margin-bottom: 4rem
+        img
+            width: 100%
+    .about
+        text-align: center
+        color: #fff
+        margin-top: 2rem
+        .title
+            color: $fifth_color
+
+        .desc
+            font-size: 3rem
+    .candidates_info
+        padding: 1.5rem 2rem
+        position: relative
+        &::after,&::before
+            position: absolute
+            content: ''
+            background: #fff
+            width: 20px
+            height: 20px
+            top: 43%
+            transform: rotate(45deg)
+        &::after
+            right: 0
+        &::before
+            left: 0
+        .name
+            color: $fifth_color
+            font-size: 3rem
+            background: #004457
+            padding-right: 1rem
+            display: flex
+            justify-content: space-between
+            .vote_number
+                background-color: $fifth_color
+                display: flex
+                align-items: center
+                padding: 5px 20px
+                position: relative
+                font-weight: 600
+                color: #fff
+                &::after
+                    content: 'رقم المرشح'
+                    position: absolute
+                    top: -25px
+                    right: 0
+                    width: 100%
+                    font-size: 15px
+                    text-align: center
+                    font-weight: normal
+                    color: $fifth_color
+    .more_person_info
+        font-size: 3rem
+        color: #fff
+    .skill_list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        .skill_container
+            display: flex
+            align-items: center
+            .icon
+                display: flex
+                img
+                    width: 100%
+            .text
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                color: #fff
+                margin-right: 5px
+                font-size: 19px
+                font-weight: 600
+                .text-title
+                    color: $fifth_color
+                    a
+                        color: $fifth_color
+                        text-decoration: none
