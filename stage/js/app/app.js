@@ -13,7 +13,7 @@ $('.owl-carousel').owlCarousel({
             items: 1,
             nav: false,
             margin: 0,
-            stagePadding: 60,
+            stagePadding: 15,
             loop: true,
             autoplayTimeout: 4000,
         },
