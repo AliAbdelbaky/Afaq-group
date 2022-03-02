@@ -46,7 +46,3 @@ window.onload = () => {
     //     document.body.scrollTop = 0;
     //     document.documentElement.scrollTop = 0;
     // })
-const navBar = document.querySelector(".navbar");
-window.addEventListener('scroll', () => {
-    this.scrollY >= 150 ? navBar.classList.add("navScroll") : navBar.classList.remove("navScroll");
-})
