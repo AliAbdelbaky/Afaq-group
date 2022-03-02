@@ -33,6 +33,14 @@ $('.owl-carousel').owlCarousel({
             }
         }
     })
+    //- loading aniamtion
+const loading_animation = document.querySelector(".loading-animation");
+window.onload = () => {
+        setTimeout(() => {
+            loading_animation.classList.remove("active");
+            document.body.classList.remove("no-scroll");
+        }, 1000)
+    }
     // const toupBtn = document.querySelector(".to_up_btn");
     // toupBtn.addEventListener("click", () => {
     //     document.body.scrollTop = 0;
@@ -42,4 +50,3 @@ const navBar = document.querySelector(".navbar");
 window.addEventListener('scroll', () => {
     this.scrollY >= 150 ? navBar.classList.add("navScroll") : navBar.classList.remove("navScroll");
 })
-console.log(navbar)
