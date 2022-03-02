@@ -11,7 +11,7 @@
         transform-style: preserve-3d
         @include mainTransition
         color: inherit
-        background: #0c4a66 !important
+        background: #0c4a66
         border: 1px solid transparent
         box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
         position: relative
@@ -22,6 +22,9 @@
             // position: absolute
             width: 100%
             height: 100%
+        @media screen and ( max-width: $Stablet )
+            background: #ffffff00
+            box-shadow: none
 
         .back
             position: absolute
@@ -133,6 +136,9 @@
                 display: flex
                 align-items: center
                 justify-content: space-between
+                @media screen and ( max-width: $phone  )
+                    font-size: 15px
+
             button
                 padding: 9px 13px
                 border-radius: 50%
@@ -141,9 +147,6 @@
                 border: 1px solid $second_color
                 color: #0c4a66
     .about_info
-        display: flex
-        align-items: center
-        justify-content: space-evenly
         margin-top: 1rem
         background: $body_bgColor
         background-image: url('../img/bg3.png')
@@ -153,10 +156,23 @@
         color: #000
         font-weight: 600
         border-radius: 4px
+        @media screen and ( max-width: $tablet )
+            padding: 10px 0px
+        @media screen and ( max-width: $Stablet )
+            padding: 5px 0px
+
         .table-title
             color: $fifth_color
-            font-size: 20px
             margin-bottom: 10px
+        table
+            font-size: 20px
+            @media screen and ( max-width: $tablet )
+                font-size: 15px
+            @media screen and ( max-width: $Stablet )
+                font-size: 10px
+
+        td
+            color: $main_color
     .vote_now
         padding: 9px 22px
         margin: 1rem auto
@@ -174,3 +190,5 @@
             color: #fff
         .icon
             display: flex
+        @media screen and ( max-width: $phone  )
+            font-size: 12px

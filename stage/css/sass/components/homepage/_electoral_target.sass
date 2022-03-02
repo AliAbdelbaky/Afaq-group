@@ -7,14 +7,14 @@
         justify-content: center
         display: flex
     .card
-        background: transparent !important
+        background: transparent
         box-shadow: none
         margin-top: 1rem
         border: none
         &.bg
-            background-image: url('../img/bg6.png') !important
-            background-size: cover !important 
-            background-repeat: no-repeat !important
+            background-image: url('../img/bg6.png')
+            background-size: cover
+            background-repeat: no-repeat
             padding: 1rem
             border-radius: 30px
         .head
@@ -22,5 +22,20 @@
             align-items: center
             column-gap: 5px
             font-size: 26px
+            @media screen and ( max-width:$tablet  )
+                font-size: 20px
+                justify-content: center
+            @media screen and ( max-width: $Stablet )
+                img
+                    width: 50px
             img
                 width: 70px
+        .icon
+            // margin-bottom: 1rem
+
+        p
+            @media screen and ( max-width: $Stablet )
+                text-align: center
+                margin-top: 1rem
+                font-weight: 500
+                font-size: 20px

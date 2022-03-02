@@ -108,26 +108,19 @@ section.candidates
                                     button
                                         <i class="fa-solid fa-arrow-up-long"></i>
         .about_info 
-            span
-                .table-title 
-                    |موعد التصويت 
-                .table-info
-                    |Voting Will START
-            span
-                .table-title 
-                    |التصويت يبدا - ينتهي
-                .table-info
-                    |2022/03/23 - 2022/03/21
-            span
-                .table-title 
-                    |الساعة يبدا - ينتهي
-                .table-info
-                    |من 9 صباحاً - 9 مساءً
-            span
-                .table-title 
-                    |مجموع الساعات
-                .table-info
-                    | 60 ساعة
+            table.table
+                thead
+                    tr
+                        th(scope='col').table-title  موعد التصويت
+                        th(scope='col').table-title  التصويت يبدا - ينتهي
+                        th(scope='col').table-title  الساعة يبدا - ينتهي
+                        th(scope='col').table-title  مجموع الساعات
+                tbody(style="border-top:none;")
+                    tr
+                        td.table-title Voting Will START
+                        td 2022/03/23 - 2022/03/21
+                        td من 9 صباحاً - 9 مساءً
+                        td  60 ساعة
         button.vote_now 
             span.text 
                 |قم بالتصويت الأن للمرشح

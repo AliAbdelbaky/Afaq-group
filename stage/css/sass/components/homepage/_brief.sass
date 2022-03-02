@@ -9,18 +9,24 @@
         line-height: 63px
         color: #000
         margin-bottom: 0rem
+        @media screen and ( max-width:670px  )
+            font-size: 1rem
+            line-height: 30px
+            margin-top: 1rem
+            padding: 0px 20px
+        @media screen and ( max-width:$phone  )
+            padding: 0px 20px
+            font-size: 0.8rem
+    .bg_ex_2,.bg_ex_1
+        position: absolute
+        top: 0
+        bottom: 0
+        width: 41px
+        height: 100%
+        @media screen and ( max-width:670px  )
+            width: 25px
     .bg_ex_2
-        position: absolute
         left: 0%
-        top: 0
-        bottom: 0
         transform: matrix(-1, 0, 0, 1, 0, 0)
-        width: 41px
-        height: 100%
     .bg_ex_1
-        width: 41px
-        height: 100%
-        position: absolute
         right: 0%
-        top: 0
-        bottom: 0

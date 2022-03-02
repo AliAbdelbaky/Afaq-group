@@ -1,24 +1,33 @@
 $('.owl-carousel').owlCarousel({
     rtl: true,
     loop: false,
-    autoPlay: true,
+    autoplayTimeout: 3000,
+    autoplay: true,
     margin: 10,
     nav: true,
     responsiveClass: true,
+    lazyLoad: true,
+    // merge: true,
     responsive: {
         0: {
             items: 1,
-            nav: true,
+            nav: false,
             margin: 0,
+            stagePadding: 0,
+            loop: true,
 
         },
-        600: {
+        400: {
             items: 1,
-            nav: false
+            nav: false,
+            stagePadding: 60,
+            loop: true,
         },
         1000: {
-            items: 4,
-            nav: false
+            loop: true,
+            items: 3,
+            nav: false,
+            stagePadding: 100,
         }
     }
 })

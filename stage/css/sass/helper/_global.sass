@@ -30,10 +30,21 @@ button
     width: fit-content
     margin: 0rem auto 2rem
     color: $fifth_color
+    text-align: center
+    @media screen and ( max-width:670px  )
+        font-size: 20px
+    @media screen and ( max-width:$phone  )
+        transform: scale(0.7)
+        font-weight: 600
     span
         margin: 0px 10px
+        @media screen and ( max-width:670px  )
+            margin: 0px 5px
     .left
         transform: matrix(-1, 0, 0, 1, 0, 0)
+    img
+        @media screen and ( max-width:$phone  )
+            width: 20px
 .subtitle
     font-size: 15px
 ::-webkit-scrollbar
@@ -52,3 +63,22 @@ button
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover
     background: #555
+.bouncingAnimation
+    animation: bounceImg 5s infinite ease-in-out both
+@keyframes bounceImg
+    0%,100%
+        transform: translateY(0px)
+    50%
+        transform: translateY(-10px)
+.owl-dot
+    border-radius: 5px
+    margin: 0rem 0.5rem
+    // border: 1px solid #c4a16d !important
+    box-shadow: none
+    &.active
+        box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+
+    span
+        background: #c4a16d !important
+.owl-carousel.owl-rtl
+    z-index: 6666

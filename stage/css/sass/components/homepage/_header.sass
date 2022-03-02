@@ -1,14 +1,22 @@
 .mainHeader
     direction: rtl
     color: $third_color
-    padding: 4rem 0rem
+    padding: 4rem 3rem
     background: #fff
+    @media screen and ( max-width: $tablet )
+        padding: 0rem
+        .row
+            overflow: hidden
+            position: relative
+            padding: 2rem 0rem
     .title
         font-size: 3rem
         font-weight: 400
         line-height: 83px
         span
             color: $second_color
+        @media screen and ( max-width: $tablet )
+            font-size: 2rem
     .subtitle
         span
             color: $main_color
@@ -42,3 +50,39 @@
             bottom: 0
         img
             width: 100%
+            @media screen and ( max-width:  $tablet )
+                margin-top: 1rem
+    .text_container
+        @media screen and ( max-width: $tablet )
+            z-index: 2
+            text-align: center
+            .title,.subtitle
+                font-weight: 600
+            .download_app
+                justify-content: center
+                flex-wrap: wrap
+                margin-top: 0.5rem
+                button
+                    margin-top: 1rem
+        @media screen and ( max-width: $Stablet  )
+            .title
+                font-size: 1.5rem
+                line-height: unset
+
+    .img-pos
+        @media screen and ( max-width: $tablet )
+            z-index: 1
+            position: absolute
+            left: 0
+            top: 0
+            bottom: 0
+            right: 0
+            &::after
+                position: absolute
+                content: ''
+                background: #ffffff1c
+                top: -11%
+                left: 0
+                width: 100%
+                backdrop-filter: blur(3px)
+                height: 111%

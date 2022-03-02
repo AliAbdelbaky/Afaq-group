@@ -3,9 +3,12 @@
     background: #fff
     padding: 2rem 0rem
     position: relative
+    .carousel-inner
+        z-index: 9999
     .carousel-indicators
         display: flex
         justify-content: space-around
+        flex-wrap: wrap
         padding: 1rem
         background: #dcdcdc21
         border-radius: 10px
@@ -22,9 +25,19 @@
             width: auto
             height: auto
             font-weight: 600
+            min-width: 130px
+            justify-content: center
+            margin-top: 5px
+            box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+            padding: 3px 10px
+            border-radius: 5px
             @include mainTransition
+            @media screen and ( max-width: $Stablet )
+                flex: 1 1 auto
+                margin-bottom: 1rem !important
             &.active
                 color: $fifth_color
+                box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
     .carousel-item
         .container-fluid
             padding: 0rem !important
@@ -32,6 +45,9 @@
         border: none
         background: transparent
         border-radius: 30px
+        background-color: #ffffff50
+        backdrop-filter: blur(10px)
+        margin-top: 1rem
         a
             display: block
             background: transparent
@@ -51,6 +67,10 @@
         z-index: 1
         width: 433px
         z-index: 333
+        @media screen and ( max-width: $Stablet )
+            left: -23rem
+        @media screen and ( max-width:  $tablet)
+            left: -20rem
     .more_news
         padding: 9px 22px
         margin: 1rem auto

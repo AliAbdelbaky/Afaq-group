@@ -21,9 +21,9 @@
   </head>
   <body> <nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container-fluid">
-<a class="navbar-brand col-md-6" href="#"><img src="./img/LOGO-LIGHT.svg" alt="logo"></a>
+<a class="navbar-brand col-lg-4" href="index.html"><img src="./img/LOGO-DARK.svg" alt="logo"></a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
+<i class="fa-solid fa-align-left"></i>
 </button>
 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 <div class="navbar-nav">
@@ -33,9 +33,9 @@
 </div>
 </nav>
     <header class="mainHeader"> 
-      <div class="container"> 
+      <div class="container-fluid"> 
         <div class="row"> 
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12 text_container">
             <h2 class="title"><span>
                  مجموع أفاق </span>انتخابات مجلس إدارة الغرفـــة التجــــارية بمـــــكة المكــــــــــــــــــــــــــرمة تـــــــــــــــــــــــــــــــاريخ 1443 - 1447 هجري</h2>
             <h4 class="subtitle"><span>
@@ -56,8 +56,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="img_container"><img class="img_bg" src="./img/header_bg_2.png" alt="header"><img src="./img/header_bg_content.png" alt="header_content"></div>
+          <div class="col-lg-6 col-md-12">
+            <div class="img_container"><img class="img_bg" src="./img/header_bg_2.png" alt="header"><img class="bouncingAnimation" src="./img/header_bg_content.png" alt="header_content"></div>
           </div>
         </div>
       </div>
@@ -180,19 +180,26 @@
             </div>
           </div>
         </div>
-        <div class="about_info"> <span>
-            <div class="table-title">
-               موعد التصويت </div>
-            <div class="table-info">Voting Will START</div></span><span>
-            <div class="table-title">
-               التصويت يبدا - ينتهي</div>
-            <div class="table-info">2022/03/23 - 2022/03/21</div></span><span>
-            <div class="table-title">
-               الساعة يبدا - ينتهي</div>
-            <div class="table-info">من 9 صباحاً - 9 مساءً</div></span><span>
-            <div class="table-title">
-               مجموع الساعات</div>
-            <div class="table-info">60 ساعة</div></span></div>
+        <div class="about_info"> 
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table-title" scope="col"> موعد التصويت</th>
+                <th class="table-title" scope="col"> التصويت يبدا - ينتهي</th>
+                <th class="table-title" scope="col"> الساعة يبدا - ينتهي</th>
+                <th class="table-title" scope="col"> مجموع الساعات</th>
+              </tr>
+            </thead>
+            <tbody style="border-top:none;">
+              <tr>
+                <td class="table-title">Voting Will START</td>
+                <td>2022/03/23 - 2022/03/21</td>
+                <td>من 9 صباحاً - 9 مساءً</td>
+                <td> 60 ساعة</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <button class="vote_now"> <span class="text">
              قم بالتصويت الأن للمرشح</span><span class="icon">
              <i class="fa-solid fa-arrow-left-long"></i></span></button>
@@ -214,54 +221,38 @@
       <h2 class="main_sec_title"> <img src="./img/button_side.png" alt=""><span>
            أبرز محاور للبرنامج الانتخابي المشترك</span><img class="left" src="./img/button_side.png" alt=""></h2><img class="bg_ex" src="./img/bg5.png" alt="">
       <div class="container"> 
-        <div class="row"> 
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon6.png" alt=""></div>
-              <div class="info">تنوع استثماري</div>
-            </div>
+        <div class="owl-carousel owl-theme">
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon6.png" alt=""></div>
+            <div class="info">تنوع استثماري</div>
           </div>
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon5.png" alt=""></div>
-              <div class="info">صحة متكاملة</div>
-            </div>
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon5.png" alt=""></div>
+            <div class="info">صحة متكاملة</div>
           </div>
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon8.png" alt=""></div>
-              <div class="info">تعليم مخصص</div>
-            </div>
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon8.png" alt=""></div>
+            <div class="info">تعليم مخصص</div>
           </div>
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon2.png" alt=""></div>
-              <div class="info">بنية تحتية فورية</div>
-            </div>
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon2.png" alt=""></div>
+            <div class="info">بنية تحتية فورية</div>
           </div>
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon7.png" alt=""></div>
-              <div class="info">تحول رقمي</div>
-            </div>
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon7.png" alt=""></div>
+            <div class="info">تحول رقمي</div>
           </div>
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon1.png" alt=""></div>
-              <div class="info">استدامة مالية</div>
-            </div>
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon1.png" alt=""></div>
+            <div class="info">استدامة مالية</div>
           </div>
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon4.png" alt=""></div>
-              <div class="info">صناعة واعدة</div>
-            </div>
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon4.png" alt=""></div>
+            <div class="info">صناعة واعدة</div>
           </div>
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="icon"><img src="./img/icon3.png" alt=""></div>
-              <div class="info">تضامن إجتماعي</div>
-            </div>
+          <div class="card"> 
+            <div class="icon"><img src="./img/icon3.png" alt=""></div>
+            <div class="info">تضامن إجتماعي</div>
           </div>
         </div>
       </div>
@@ -270,67 +261,41 @@
       <h2 class="main_sec_title"> <img src="./img/button_side.png" alt=""><span>
            أبرز أهداف البرنامج الانتخابي المشترك</span><img class="left" src="./img/button_side.png" alt=""></h2>
       <div class="container"> 
-        <div class="row"> 
-          <div class="col-md-3">
-            <div class="card"> 
-              <div class="head"> 
-                <div class="icon"><img src="./img/icon9.png" alt=""></div>
-                <div class="info">أبرز أهداف البرنامج الانتخابي المشترك</div>
-              </div>
+        <div class="owl-carousel owl-theme">
+          <div class="card bg"> 
+            <div class="head"> 
+              <div class="icon"><img src="./img/icon10.png" alt=""></div>
+              <div class="info">وطن طموح</div>
             </div>
+            <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
           </div>
-          <div class="col-md-3">
-            <div class="card bg"> 
-              <div class="head"> 
-                <div class="icon"><img src="./img/icon10.png" alt=""></div>
-                <div class="info">وطن طموح</div>
-              </div>
-              <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
+          <div class="card bg"> 
+            <div class="head"> 
+              <div class="icon"><img src="./img/icon11.png" alt=""></div>
+              <div class="info">اقتصاد مزدهر</div>
             </div>
+            <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
           </div>
-          <div class="col-md-3">
-            <div class="card bg"> 
-              <div class="head"> 
-                <div class="icon"><img src="./img/icon11.png" alt=""></div>
-                <div class="info">اقتصاد مزدهر</div>
-              </div>
-              <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
+          <div class="card bg"> 
+            <div class="head"> 
+              <div class="icon"><img src="./img/icon12.png" alt=""></div>
+              <div class="info">تنمية المكان</div>
             </div>
+            <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
           </div>
-          <div class="col-md-3">
-            <div class="card bg"> 
-              <div class="head"> 
-                <div class="icon"><img src="./img/icon12.png" alt=""></div>
-                <div class="info">تنمية المكان</div>
-              </div>
-              <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
+          <div class="card bg"> 
+            <div class="head"> 
+              <div class="icon"><img src="./img/icon14.png" alt=""></div>
+              <div class="info">خدمات مجودة</div>
             </div>
+            <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
           </div>
-          <div class="col-md-3">
-            <div class="card bg"> 
-              <div class="head"> 
-                <div class="icon"><img src="./img/icon14.png" alt=""></div>
-                <div class="info">خدمات مجودة</div>
-              </div>
-              <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
+          <div class="card bg"> 
+            <div class="head"> 
+              <div class="icon"><img src="./img/icon13.png" alt=""></div>
+              <div class="info">بناء الانسان</div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg"> 
-              <div class="head"> 
-                <div class="icon"><img src="./img/icon13.png" alt=""></div>
-                <div class="info">بناء الانسان</div>
-              </div>
-              <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card"> 
-              <div class="head">
-                <div class="info"> <strong>آفاق متجددة .. لمستقبل واعد</strong></div>
-              </div>
-              <div class="icon"><img src="./img/icon15.png" alt="" style="width:100%"></div>
-            </div>
+            <p class="info">هذا النص هو مثال لنص يمكن أن يستبدل المساحة، لقد تم توليد هذا النص من</p>
           </div>
         </div>
       </div>
@@ -376,7 +341,7 @@
       </div>
     </section>
     <section class="afaqTweet"> 
-      <div class="container">
+      <div class="container-fluid">
         <h2>التغريدات بواسطة <a href="https://twitter.com/Afaq2022Gp" target="_blank">@Afaq2022Gp</a></h2>
         <div class="row"> 
           <div class="col-md-12">
@@ -392,31 +357,27 @@
       <h2 class="main_sec_title"> <img src="./img/button_side.png" alt=""><span>
            اخبار الحملة</span><img class="left" src="./img/button_side.png" alt=""></h2>
       <div class="container">
-        <div class="row"> 
-          <div class="col-md-4">
-            <div class="card"><img class="card-img-top" src="./img/cardNews1.png" alt="news">
-              <div class="card-body">
-                <h5 class="card-title">هذا النص هو مثال لنص يمكن يستبدل .في نفس المساحة، لقد تم توليد هذا</h5>
-                <p class="card-text"></p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن زيادة عدد الحروف التى يولدها التطبيق<a class="btn btn-primary" href="#">اقرا المزيد</a>
-              </div>
+        <div class="owl-carousel owl-theme">
+          <div class="card"><img class="card-img-top" src="./img/cardNews1.png" alt="news">
+            <div class="card-body">
+              <h5 class="card-title">هذا النص هو مثال لنص يمكن يستبدل .في نفس المساحة، لقد تم توليد هذا</h5>
+              <p class="card-text"></p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن زيادة عدد الحروف التى يولدها التطبيق<a class="btn btn-primary" href="#">اقرا المزيد</a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card"><img class="card-img-top" src="./img/cardNews3.png" alt="news">
-              <div class="card-body">
-                <h5 class="card-title">هذا النص هو مثال لنص يمكن يستبدل .في نفس المساحة، لقد تم توليد هذا</h5>
-                <p class="card-text"></p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن زيادة عدد الحروف التى يولدها التطبيق<a class="btn btn-primary" href="#">اقرا المزيد</a>
-              </div>
+          <div class="card"><img class="card-img-top" src="./img/cardNews3.png" alt="news">
+            <div class="card-body">
+              <h5 class="card-title">هذا النص هو مثال لنص يمكن يستبدل .في نفس المساحة، لقد تم توليد هذا</h5>
+              <p class="card-text"></p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن زيادة عدد الحروف التى يولدها التطبيق<a class="btn btn-primary" href="#">اقرا المزيد</a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card"><img class="card-img-top" src="./img/cardNews2.png" alt="news">
-              <div class="card-body">
-                <h5 class="card-title">هذا النص هو مثال لنص يمكن يستبدل .في نفس المساحة، لقد تم توليد هذا</h5>
-                <p class="card-text"></p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن زيادة عدد الحروف التى يولدها التطبيق<a class="btn btn-primary" href="#">اقرا المزيد</a>
-              </div>
+          <div class="card"><img class="card-img-top" src="./img/cardNews2.png" alt="news">
+            <div class="card-body">
+              <h5 class="card-title">هذا النص هو مثال لنص يمكن يستبدل .في نفس المساحة، لقد تم توليد هذا</h5>
+              <p class="card-text"></p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن زيادة عدد الحروف التى يولدها التطبيق<a class="btn btn-primary" href="#">اقرا المزيد</a>
             </div>
           </div>
+        </div>
+        <div class="row">
           <div class="col-md-12"> 
             <button class="more_news"><span class="text">
                  المزيد من الاخبار</span><span class="icon">
@@ -681,8 +642,8 @@
             <div class="carousel-item active">
               <div class="container-fluid"> 
                 <div class="row"> 
-                  <div class="col-md-6">
-                    <div class="carousel-caption d-none d-md-block">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="carousel-caption d-md-block">
                       <h1 class="mainTitle">مواعيد وأماكن الفعاليات</h1>
                       <h4 class="subtitle">الفعالية الاولى</h4>
                       <p class="details"> <strong>فعالية مناقشة كيفية محاربة الفساد في .الأماكن الحكومية</strong></p>
@@ -706,15 +667,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6"><img class="d-block w-100" src="./img/cardImgActivites.png" alt="..."></div>
+                  <div class="col-lg-6 col-md-12"><img class="d-block w-100" src="./img/cardImgActivites.png" alt="..."></div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="container-fluid"> 
                 <div class="row"> 
-                  <div class="col-md-6">
-                    <div class="carousel-caption d-none d-md-block">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="carousel-caption d-md-block">
                       <h1 class="mainTitle">مواعيد وأماكن الفعاليات</h1>
                       <h4 class="subtitle">الفعالية الاولى</h4>
                       <p class="details"> <strong>فعالية مناقشة كيفية محاربة الفساد في .الأماكن الحكومية</strong></p>
@@ -738,15 +699,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6"><img class="d-block w-100" src="./img/cardImgActivites.png" alt="..."></div>
+                  <div class="col-lg-6 col-md-12"><img class="d-block w-100" src="./img/cardImgActivites.png" alt="..."></div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="container-fluid"> 
                 <div class="row"> 
-                  <div class="col-md-6">
-                    <div class="carousel-caption d-none d-md-block">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="carousel-caption d-md-block">
                       <h1 class="mainTitle">مواعيد وأماكن الفعاليات</h1>
                       <h4 class="subtitle">الفعالية الاولى</h4>
                       <p class="details"> <strong>فعالية مناقشة كيفية محاربة الفساد في .الأماكن الحكومية</strong></p>
@@ -770,7 +731,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6"><img class="d-block w-100" src="./img/cardImgActivites.png" alt="..."></div>
+                  <div class="col-lg-6 col-md-12"><img class="d-block w-100" src="./img/cardImgActivites.png" alt="..."></div>
                 </div>
               </div>
             </div>
@@ -779,9 +740,9 @@
       </div>
     </section>
     <section class="tech_support">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row"> 
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <div class="form_container">
               <h2 class="title">الدعم الفني</h2>
               <h5 class="subtitle">يرجى كتابة وتوضيح برسالتك المشكلة بالتحديد حتى نقدم المساعدة</h5>
@@ -818,7 +779,7 @@
               </form>
             </div>
           </div>
-          <div class="col-md-6"><img src="./img/techSupport.svg" alt=""></div>
+          <div class="col-lg-6 col-md-12"><img src="./img/techSupport.svg" alt=""></div>
         </div>
       </div>
     </section>

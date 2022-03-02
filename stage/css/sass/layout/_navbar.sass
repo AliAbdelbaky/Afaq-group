@@ -2,7 +2,9 @@
     background: #fff
     direction: rtl
     img
-        width: 150px
+        width: 190px
+        @media screen and ( max-width:$phone  )
+            width: 150px
     .nav-link
         color: $third_color !important
         border-radius: 64px
@@ -14,5 +16,27 @@
             background: $second_color
             color: $fouth_color !important
             box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+        @media screen and ( max-width: 992px  )
+            border-radius: 10px
+            padding: 10px
+            margin: 1rem
     .navbar-brand
-        padding-right: 11rem
+        display: flex
+        align-items: center
+        justify-content: center
+    .navbar-toggler
+        background-color: transparent
+        border: none
+        color: $button-hoverbg
+        outline: none
+        padding: 5px 13px
+        box-shadow: none
+        font-size: 41px
+        &:focus
+            box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+        @media screen and ( max-width:$phone  )
+            font-size: 25px
+            padding: 5px 11px
+
+    .navbar-collapse
+        justify-content: center

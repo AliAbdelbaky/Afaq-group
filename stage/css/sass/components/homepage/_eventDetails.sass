@@ -5,6 +5,8 @@
     background-size: cover
     background-repeat: no-repeat
     padding: 2rem 1rem
+    .carousel-inner
+        z-index: 33333
     .carousel-item
         padding: 20px
         .carousel-caption
@@ -14,6 +16,8 @@
             .mainTitle
                 color: $fifth_color
                 margin-bottom: 1.3rem
+                @media screen and ( max-width: $tablet   )
+                    text-align: center
             .subtitle
                 font-weight: 600
                 color: $main_color
@@ -50,8 +54,11 @@
     .carousel-indicators
         right: 0
         margin: 0rem
+        z-index: 99999
         align-items: center
         justify-content: flex-start
+        @media screen and ( max-width: $tablet  )
+            bottom: -19px
         button
             border-radius: 50%
             background-color: transparent
