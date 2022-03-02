@@ -1,21 +1,49 @@
 .navbar
     background: #fff
     direction: rtl
+    position: fixed
+    width: 100%
+    z-index: 999999999
+    backdrop-filter: blur(14px)
+    top: 0
+    left: 0
+    right: 0
+    @include mainTransition
     img
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s
         width: 190px
         @media screen and ( max-width:$phone  )
             width: 150px
+    &.navScroll
+        background-color: #ffffffad
+        img
+            width: 100px
     .nav-link
         color: $third_color !important
         border-radius: 64px
         font-size: 17px
         font-weight: 500
         margin: 0px 0.5rem
+        position: relative
         @include mainTransition
+        &::after
+            content: ""
+            height: 2px
+            left: 0
+            position: absolute
+            top: 43px
+            transform: scaleX(0)
+            transform-origin: right top 0
+            transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s
+            background-color: $second_color
+            width: 100%
         &:hover , &.active
-            background: $second_color
-            color: $fouth_color !important
-            box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+            // background: $second_color
+            color: $second_color !important
+            // box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+            &::after
+                transform: scaleX(1)
+
         @media screen and ( max-width: 992px  )
             border-radius: 10px
             padding: 10px
@@ -33,7 +61,7 @@
         box-shadow: none
         font-size: 41px
         &:focus
-            box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+            box-shadow: none
         @media screen and ( max-width:$phone  )
             font-size: 25px
             padding: 5px 11px
