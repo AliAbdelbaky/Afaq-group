@@ -3,6 +3,8 @@
     direction: rtl
     position: relative
     padding-bottom: 18rem
+    @media screen and ( max-width: 750px )
+        padding-bottom: 2rem
     .main-title
         color: $main_color
         font-weight: 500
@@ -114,7 +116,7 @@
         pointer-events: none
         @media screen and ( max-width: 750px )
             display: none
-            
+
         .icon_container
             direction: ltr
             .vertical

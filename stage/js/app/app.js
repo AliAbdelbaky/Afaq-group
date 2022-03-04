@@ -46,3 +46,30 @@ window.onload = () => {
     //     document.body.scrollTop = 0;
     //     document.documentElement.scrollTop = 0;
     // })
+$(function() {
+    App.init();
+});
+var App = {
+    init: function() {
+        this.side.nav()
+    },
+    side: {
+        nav: function() {
+            this.toggle(), this.navigation()
+        },
+        toggle: function() {
+            $(".navbar-toggler").on("touchstart click", function(e) {
+                e.preventDefault(), $(".sidebar").toggleClass("active"), $(".nav").removeClass("active"), $(".sidebar .sidebar-overlay").removeClass("fadeOut animated").addClass("fadeIn animated")
+            }), $(".sidebar .sidebar-overlay").on("touchstart click", function(e) {
+                e.preventDefault(), $(".navbar-toggler").click(), $(this).removeClass("fadeIn").addClass("fadeOut")
+            })
+        },
+        navigation: function() {
+            $(".nav-left a").on("touchstart click", function(e) {
+                e.preventDefault();
+                var t = $(this).attr("href").replace("#", "");
+                $(".sidebar").toggleClass("active"), $(".html").removeClass("visible"), "home" == t || "" == t || null == t ? $(".html.welcome").addClass("visible") : $(".html." + t).addClass("visible"), App.title($(this).text())
+            })
+        }
+    },
+};
