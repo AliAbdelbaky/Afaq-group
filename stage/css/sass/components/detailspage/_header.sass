@@ -8,6 +8,21 @@
         background-size: contain
         width: 22rem
         height: 30.5rem
+        @media screen and ( max-width: 1068px )
+            width: 17rem
+            height: 25rem
+            img
+                width: 13.4rem !important
+        @media screen and ( max-width: $phone )
+            width: 17rem
+            height: 25.5rem
+            img
+                width: 13.4rem !important
+        @media screen and ( max-width:  270px)
+            width: 13rem
+            height: 19.5rem
+            img
+                width: 10.1rem !important
         .userpic
             display: flex
             align-items: center
@@ -27,6 +42,13 @@
 
         .desc
             font-size: 3rem
+            @media screen and ( max-width: 1200px )
+                font-size: 2.3rem
+            @media screen and ( max-width: 670px )
+                font-size: 2rem
+            @media screen and ( max-width: $phone )
+                font-size: 1.5rem
+
     .candidates_info
         padding: 1.5rem 2rem
         position: relative
@@ -38,6 +60,13 @@
             height: 20px
             top: 43%
             transform: rotate(45deg)
+            @media screen and ( max-width: 1200px )
+                width: 15px
+                height: 15px
+            @media screen and ( max-width:  270px)
+                width: 10px
+                height: 10px
+
         &::after
             right: 0
         &::before
@@ -49,6 +78,20 @@
             padding-right: 1rem
             display: flex
             justify-content: space-between
+            @media screen and ( max-width: 1200px )
+                font-size: 2.2rem
+            @media screen and ( max-width: 670px )
+                font-size: 1.9rem
+            @media screen and ( max-width: 560px )
+                font-size: 1rem
+            @media screen and ( max-width: $phone )
+                font-size: 0.7rem
+            @media screen and ( max-width:  270px)
+                font-size: 12px
+                font-weight: 600
+                span
+                    &:nth-child(1)
+                        padding: 10px 0px
             .vote_number
                 background-color: $fifth_color
                 display: flex
@@ -63,24 +106,40 @@
                     top: -25px
                     right: 0
                     width: 100%
-                    font-size: 15px
+                    font-size: 14px
                     text-align: center
                     font-weight: normal
                     color: $fifth_color
+                    @media screen and ( max-width: 670px )
+                        font-size: 10px
+                    @media screen and ( max-width:  270px)
+                        font-size: 8px
     .more_person_info
         font-size: 3rem
         color: #fff
+        @media screen and ( max-width: 1200px )
+            font-size: 2.3rem
+        @media screen and ( max-width: 670px )
+            font-size: 2rem
+        @media screen and ( max-width: $phone )
+            font-size: 1.6rem
+        @media screen and ( max-width:  270px)
+            font-size: 1rem
     .skill_list
         display: flex
         flex-wrap: wrap
-        justify-content: space-evenly
+        justify-content: flex-start
+        column-gap: 20px
         .skill_container
             display: flex
             align-items: center
+            margin-top: 20px
             .icon
                 display: flex
                 img
                     width: 100%
+                    @media screen and ( max-width: $phone )
+                        width: 95%
             .text
                 display: flex
                 flex-direction: column
@@ -89,8 +148,22 @@
                 margin-right: 5px
                 font-size: 19px
                 font-weight: 600
+                @media screen and ( max-width: $phone  )
+                    font-size: 15px
                 .text-title
                     color: $fifth_color
                     a
                         color: $fifth_color
                         text-decoration: none
+    .pic-container
+        padding: 10px
+        @media screen and ( max-width: 992px )
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+    .container-fluid
+        @media screen and ( max-width: 992px )
+            padding: 0rem
+        @media screen and ( min-width: 993px )
+            padding: 1rem 2rem
