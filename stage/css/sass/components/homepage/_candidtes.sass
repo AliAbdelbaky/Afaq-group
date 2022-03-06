@@ -45,32 +45,38 @@
                 background-size: cover
                 background-repeat: no-repeat
                 background-color: $body_bgColor
-                padding: 15px 5px
                 color: #000
                 text-align: right
                 border-radius: 15px
-                padding: 1rem
                 height: 100%
                 width: 100%
                 display: flex
                 flex-direction: column
+                padding: 1rem 0rem
+                .card-footer
+                    padding: 0rem
                 .title
                     color: $fifth_color
                     font-size: 22px
                     font-weight: 600
+                    padding: 1rem
                 .desc
                     color: #000
                     font-size: 19px
                     margin: 0rem
                     margin-top: 10px
                     height: 199px
-                    overflow: hidden
+                    overflow: overlay
+                    padding: 1rem
                 .card-body
                     padding: 0rem
                 .view_candidate_info
                     justify-content: flex-end
                     color: #a78a41
-                    font-size: 19px
+                    flex: 1 1 auto
+                    display: block
+                    text-align: center
+                    padding: 1rem 0rem
                     button
                         margin-right: 10px
                         padding: 5px 8px
@@ -78,6 +84,7 @@
                         color: #04374a
                         border: 2px solid #D3BA7B
                         box-shadow: none
+                        display: inline-flex
                 .card-footer
                     padding-top: 2rem
                     border-top: none
