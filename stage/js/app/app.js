@@ -1,3 +1,4 @@
+//--- owl carousel
 $('.owl-carousel').owlCarousel({
         rtl: true,
         loop: false,
@@ -32,10 +33,12 @@ $('.owl-carousel').owlCarousel({
             }
         }
     })
+    //----------
     //- loading aniamtion
 const loading_animation = document.querySelector(".loading-animation");
 window.onload = () => {
-    setTimeout(() => {
-        loading_animation.classList.remove("active");
-    }, 1000)
-}
+        setTimeout(() => {
+            loading_animation.classList.remove("active");
+        }, 1000)
+    }
+    //------------------
