@@ -4,16 +4,16 @@ window.addEventListener('scroll', () => {
     this.scrollY >= 150 ? navbar.classList.add("navScroll") : navbar.classList.remove("navScroll");
     this.scrollY >= 150 ? sidebar.classList.add("navScroll") : sidebar.classList.remove("navScroll");
 })
-$(function() {
-    App.init();
-});
-var App = {
+window.onload = () => {
+    sidebar.init();
+}
+let sidebar = {
     init: function() {
         this.side.nav()
     },
     side: {
         nav: function() {
-            this.toggle(), this.navigation()
+            this.toggle()
         },
         toggle: function() {
             $(".navbar-toggler").on("touchstart click", function(e) {
@@ -23,11 +23,18 @@ var App = {
             })
         },
         navigation: function() {
-            $(".nav-left a").on("touchstart click", function(e) {
+            $(".sidebar .nav-link").on("touchstart click", function(e) {
                 e.preventDefault();
-                var t = $(this).attr("href").replace("#", "");
-                $(".sidebar").toggleClass("active"), $(".html").removeClass("visible"), "home" == t || "" == t || null == t ? $(".html.welcome").addClass("visible") : $(".html." + t).addClass("visible"), App.title($(this).text())
+                $(".sidebar").toggleClass("active")
             })
         }
     },
 };
+const navLink = document.querySelectorAll('.sidebar .sidebar-content a')
+console.log(navLink)
+navLink.forEach(item => {
+    item.addEventListener('click', () => {
+        let sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove('active')
+    })
+})

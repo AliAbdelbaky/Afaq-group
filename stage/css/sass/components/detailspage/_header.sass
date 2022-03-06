@@ -128,8 +128,10 @@
     .skill_list
         display: flex
         flex-wrap: wrap
-        justify-content: flex-start
         column-gap: 20px
+        justify-content: space-between
+        @media screen and ( max-width: $phone )
+            justify-content: flex-start
         .skill_container
             display: flex
             align-items: center

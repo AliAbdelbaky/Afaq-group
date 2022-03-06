@@ -76,6 +76,7 @@
     z-index: 99999
     direction: rtl
     top: 13%
+    pointer-events: none
     @include mainTransition
     &.navScroll
         top: 8%
@@ -107,15 +108,13 @@
         background-color: #0c4a6626
         backdrop-filter: blur(31px)
         transform: translateX(150%)
-
     &.active
+        pointer-events: all
         .sidebar-content
             transform: translateX(25%)
-
         .sidebar-overlay
             opacity: 1
             transform: scale(1)
-
     .sidebar-content
         .nav-link
             color: $third_color !important

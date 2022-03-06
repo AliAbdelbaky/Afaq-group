@@ -3,11 +3,8 @@ doctype html
 html(lang="en")
     head
         //- styles
-        script(src="./js/nav-js.js") 
         include layout/meta.pug
-
         include layout/styles.pug
-        script(src="./js/formValidation.js") 
     body 
         //- loading animation
         include ./components/loading-animation/_loading_animation.pug
@@ -38,4 +35,5 @@ html(lang="en")
         //- footer
         include ./layout/_footer.pug
         //-scripts
+        script(src="./js/nav-js.js") 
         include layout/scripts
