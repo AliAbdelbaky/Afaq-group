@@ -1,3 +1,4 @@
+//--- navbar tasks
 window.addEventListener('scroll', () => {
     let navbar = document.getElementById('nav')
     let sidebar = document.querySelector('.sidebar');
@@ -15,7 +16,8 @@ buttonToggler.addEventListener("click", () => {
     sidebar.classList.toggle('active')
 })
 navLink.forEach(item => {
-    item.addEventListener('click', () => {
-        sidebar.classList.remove('active')
+        item.addEventListener('click', () => {
+            sidebar.classList.remove('active')
+        })
     })
-})
+    //------------------
