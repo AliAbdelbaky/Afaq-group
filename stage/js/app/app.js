@@ -7,7 +7,6 @@ $('.owl-carousel').owlCarousel({
         nav: true,
         responsiveClass: true,
         lazyLoad: true,
-        // merge: true,
         responsive: {
             0: {
                 items: 1,
@@ -38,6 +37,5 @@ const loading_animation = document.querySelector(".loading-animation");
 window.onload = () => {
     setTimeout(() => {
         loading_animation.classList.remove("active");
-        document.body.classList.remove("no-scroll");
     }, 1000)
 }
