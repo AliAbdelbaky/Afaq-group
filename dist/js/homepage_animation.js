@@ -8,7 +8,6 @@ let afaqGroupSec = document.querySelector(".afaqGroup");
 let afaqTweetSec = document.querySelector(".afaqTweet");
 let eventDetailSec = document.querySelector(".eventDetails");
 let tech_supportSec = document.querySelector(".tech_support");
-let footer = document.querySelector("footer");
 gsap.timeline({
         scrollTrigger: {
             trigger: header,
@@ -100,12 +99,3 @@ gsap.timeline({
     })
     .fromTo(tech_supportSec.querySelector(".form_container"), { x: "100%", opacity: "0" }, { x: "0%", opacity: "1" })
     .fromTo(tech_supportSec.querySelector("img"), { x: "-100%", opacity: "0" }, { x: "0%", opacity: "1" }, "-=0.5");
-gsap.timeline({
-        scrollTrigger: {
-            trigger: footer,
-            start: '-=150 bottom',
-            end: '+=100 top',
-            scrub: 1
-        }
-    })
-    .fromTo(footer, { y: "100%", opacity: "0" }, { y: "0%", opacity: "1" })
