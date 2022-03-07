@@ -2,7 +2,7 @@
 $('.owl-carousel').owlCarousel({
         rtl: true,
         loop: false,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 15000,
         autoplay: true,
         margin: 10,
         nav: true,
@@ -15,21 +15,21 @@ $('.owl-carousel').owlCarousel({
                 margin: 0,
                 stagePadding: 15,
                 loop: true,
-                autoplayTimeout: 4000,
+                autoplayTimeout: 15000,
             },
             400: {
                 items: 1,
                 nav: false,
                 stagePadding: 60,
                 loop: true,
-                autoplayTimeout: 4000,
+                autoplayTimeout: 15000,
             },
             1000: {
                 loop: true,
                 items: 3,
                 nav: false,
                 stagePadding: 100,
-                autoplayTimeout: 4000,
+                autoplayTimeout: 15000,
             }
         }
     })
