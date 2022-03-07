@@ -1,0 +1,31 @@
+.head_container
+    margin-top: 9rem
+    background-image: url('../img/bg3.png')
+    background-repeat: no-repeat
+    background-size: cover
+    direction: rtl
+    text-align: center
+    background-color: #e2e2e5
+    padding: 4rem 0rem
+    .main_sec_title
+        margin-bottom: 0rem
+.more-news
+    margin-bottom: 5rem
+    direction: rtl
+    .pagination 
+        flex-direction: row-reverse
+        display: flex
+        align-items: center
+        justify-content: center
+        li
+            .page-link
+                background-color: #DCDCDC
+                color: #fff
+                border-radius: 7px
+                margin: 0px 2px
+                font-weight: 600
+                @include mainTransition
+                &:hover
+                    background-color: #C5A657
+                &.active
+                    background-color: #C5A657

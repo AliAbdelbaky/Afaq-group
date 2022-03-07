@@ -1,0 +1,147 @@
+-var PageTitle = "آفاق | فيديوهات"
+doctype html
+html(lang="ar")
+    head
+        //- styles
+        include layout/meta.pug
+        include layout/styles.pug
+    body 
+        //- loading animation
+        include ./components/loading-animation/_loading_animation.pug
+        //--navbar
+        include ./layout/_nav.pug
+        //- afaq group 
+        .head_container
+            h2.main_sec_title  
+                img(src="./img/button_side.png" alt="")
+                span 
+                    |مجموعة فيديوهات آفاق
+                img(src="./img/button_side.png" alt="" class="left")
+        section.afaqGroup.more-news 
+            .container-fluid  
+                .row 
+                    .col-md-12.news_container
+                        .row
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا نايف الزايدي؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا عواض البشري؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا علاء كعكي؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا فواز الشريف؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا نايف الزايدي؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا عواض البشري؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا علاء كعكي؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا فواز الشريف؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا نايف الزايدي؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا عواض البشري؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا علاء كعكي؟
+                            .col-md-3
+                                .card
+                                    .card-top
+                                        a(href="link#")
+                                            img(src="./img/ksa.png", alt="") 
+                                            <i class="fa-solid fa-circle-play"></i>
+                                        .overlay 
+                                    .card-footer 
+                                        a(href="" class="view_candidate_info") لماذا فواز الشريف؟
+                    .col-md-12.pagenation
+                        nav(aria-label='Page navigation example')
+                            ul.pagination.justify-content-center
+                                li.page-item
+                                    a.page-link.active(href='#') 1
+                                li.page-item
+                                    a.page-link(href='#') 2
+                                li.page-item
+                                    a.page-link(href='#') 3
+
+        //- footer
+        include ./layout/_footer.pug
+        //-scripts
+        script(src="./js/nav-js.js") 
+        include layout/scripts

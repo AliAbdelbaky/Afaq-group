@@ -1,0 +1,58 @@
+.navigation_bar
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    padding: 1rem
+    background: #dcdcdc21
+    border-radius: 10px
+    margin: 1rem 0rem !important
+    flex-wrap: wrap
+    position: unset !important
+    button
+        background: transparent
+        border: none
+        box-shadow: none
+        color: #949494
+        text-indent: unset !important
+        margin: 0rem !important
+        width: auto
+        height: auto
+        font-weight: 600
+        min-width: 130px
+        justify-content: center
+        margin-top: 5px
+        box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+        padding: 3px 10px
+        border-radius: 5px
+        @include mainTransition
+        @media screen and ( max-width: $Stablet )
+            flex: 1 1 auto
+            margin-bottom: 1rem !important
+            min-width: 100%
+        &.active
+            color: $fifth_color
+        &:hover
+            color: $fifth_color
+            box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+.more-activ
+    padding: 3rem 0rem 2rem
+.more-active
+    .card
+        border: none
+        background: transparent
+        border-radius: 30px
+        background-color: #ffffff50
+        backdrop-filter: blur(10px)
+        margin-top: 1rem
+        a
+            display: block
+            background: transparent
+            color: $fifth_color
+            text-decoration: none
+            border: none
+            text-align: right
+            font-weight: 600
+            padding: 0.4rem 0rem
+            @include mainTransition
+            &:hover
+                color: $main_color
