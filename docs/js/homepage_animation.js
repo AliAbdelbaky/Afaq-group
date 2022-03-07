@@ -13,12 +13,10 @@ gsap.timeline({
             trigger: header,
             start: "+=600 center",
             end: "bottom center",
-            scrub: 1,
+            scrub: 2,
         }
     })
-    .to(header.querySelector(".title"), { y: "100%", opacity: "0" })
-    .to(header.querySelector(".btn_container"), { y: "100%", opacity: "0" }, "-=0.5")
-    .to(header.querySelector(".img_container"), { y: "-100%", opacity: "0" }, "-=0.5");
+    .to(header.querySelector(".carousel"), { y: "-100%", opacity: "0" });
 gsap.timeline({
         scrollTrigger: {
             trigger: candidtesSec,
@@ -82,18 +80,17 @@ gsap.timeline({
 gsap.timeline({
         scrollTrigger: {
             trigger: eventDetailSec,
-            start: '+=100 bottom',
-            end: '+=100 top',
-            scrub: 2,
+            start: "top bottom",
+            end: "+=500 bottom",
+            scrub: 2
         }
     })
-    .fromTo(eventDetailSec.querySelector(".main_sec_title"), { y: "100%", opacity: "0" }, { y: "0%", opacity: "1" })
     .fromTo(eventDetailSec.querySelector(".carousel"), { y: "100%", opacity: "0" }, { y: "0%", opacity: "1" }, "-=0.5");
 gsap.timeline({
         scrollTrigger: {
             trigger: tech_supportSec,
-            start: '+=100 bottom',
-            end: '+=100 top',
+            start: "top bottom",
+            end: "+=500 bottom",
             scrub: 2,
         }
     })
