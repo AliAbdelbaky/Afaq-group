@@ -24,6 +24,13 @@ $('.owl-carousel').owlCarousel({
                 loop: true,
                 autoplayTimeout: 15000,
             },
+            600: {
+                items: 1,
+                nav: false,
+                stagePadding: 60,
+                loop: true,
+                autoplayTimeout: 15000,
+            },
             1000: {
                 loop: true,
                 items: 3,
