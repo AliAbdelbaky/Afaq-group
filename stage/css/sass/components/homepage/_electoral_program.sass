@@ -7,6 +7,8 @@
         position: absolute
         top: 10%
         left: -100px
+        @media screen and ( max-width: 510px )
+            display: none
     .card
         margin: auto
         margin-top: 1rem
@@ -21,10 +23,8 @@
         cursor: pointer
         flex-direction: column
         padding: 2rem 0rem
-        @include mainTransition
         width: 13rem
-        // @media screen and ( max-width: $tablet )
-            // width: auto
+        @include mainTransition
         &:hover
             background: #0c4a66 !important
             color: #fff
