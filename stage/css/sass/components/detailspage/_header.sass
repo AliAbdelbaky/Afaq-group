@@ -84,10 +84,11 @@
             @media screen and ( max-width: 1200px )
                 width: 15px
                 height: 15px
-            @media screen and ( max-width:  270px)
-                width: 10px
-                height: 10px
-
+            @media screen and ( max-width: 670px )
+                display: none
+                padding: 1.5rem 0rem
+        @media screen and ( max-width: 670px )
+            padding: 1.5rem 0rem
         &::after
             right: 0
         &::before
@@ -106,9 +107,12 @@
                 font-size: 1.9rem
             @media screen and ( max-width: 560px )
                 font-weight: 600
-                font-size: 1rem
+                font-size: 1.5rem
+                .vote_number
+                    line-height: 3
+
             @media screen and ( max-width: $phone )
-                font-size: 0.7rem
+                font-size: 1remrem
             @media screen and ( max-width:  270px)
                 font-size: 12px
                 font-weight: 600
@@ -123,6 +127,8 @@
                 position: relative
                 font-weight: 600
                 color: #fff
+                @media screen and ( max-width: 310px )
+                    line-height: 4
                 &::after
                     content: 'رقم المرشح'
                     position: absolute
@@ -135,6 +141,8 @@
                     color: $fifth_color
                     @media screen and ( max-width: 670px )
                         font-size: 10px
+                    @media screen and ( max-width: 310px )
+                        top: -27%
                     @media screen and ( max-width:  270px)
                         font-size: 8px
     .more_person_info

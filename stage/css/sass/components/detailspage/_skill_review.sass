@@ -4,7 +4,7 @@
     position: relative
     padding-bottom: 18rem
     @media screen and ( max-width: 750px )
-        padding-bottom: 2rem
+        padding: 2rem 0rem 
     .main-title
         color: $main_color
         font-weight: 500
@@ -69,14 +69,17 @@
                 margin-top: 3rem
                 .number
                     background-color: #BFBFBF
+                    display: block
                     min-width: 45px
                     min-height: 45px
-                    display: block
                     margin-left: 2rem
                     transform: rotate(45deg)
                     position: relative
                     box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
-
+                    @media screen and ( max-width: 500px )
+                        min-width: 20px
+                        min-height: 20px
+                        margin-left: 1rem
                     &::after
                         content: attr(data-sort)
                         position: absolute
@@ -86,6 +89,8 @@
                         top: 50%
                         left: 50%
                         transform: translate(-50%, -50%) rotate(-45deg)
+                        @media screen and ( max-width: 500px )
+                            font-size: 1rem
                     &::before
                         content: ''
                         background-color: $main_color
@@ -94,12 +99,17 @@
                         position: absolute
                         left: 0
                         bottom: 0
+                        @media screen and ( max-width: 500px )
+                            width: 7px
+                            height: 7px
 
                 .text
                     margin: 0rem
                     font-weight: 600
                     color: $main_color
                     font-size: 1.5rem
+                    @media screen and ( max-width: 500px )
+                        font-size: 1rem
     .side_footer
         position: absolute
         bottom: 0
