@@ -1,14 +1,4 @@
-let header = document.querySelector('.secHeader')
 let skill_reviewSec = document.querySelector('.skill_review');
-gsap.timeline({
-        scrollTrigger: {
-            trigger: header,
-            start: "+=600 center",
-            end: "bottom center",
-            scrub: 2
-        }
-    })
-    .to(header, { opacity: "0" });
 gsap.timeline({
         scrollTrigger: {
             trigger: skill_reviewSec.querySelector('.membership'),
