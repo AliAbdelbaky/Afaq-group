@@ -16,7 +16,7 @@ gsap.timeline({
             scrub: 2,
         }
     })
-    .to(header.querySelector(".carousel"), { y: "-100%", opacity: "0" });
+    .to(header.querySelector(".carousel"), { opacity: "0" });
 gsap.timeline({
         scrollTrigger: {
             trigger: candidtesSec,
