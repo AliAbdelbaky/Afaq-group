@@ -3,8 +3,11 @@
     direction: rtl
     position: relative
     padding-bottom: 18rem
+    @media screen and ( max-width: 977px  )
+        padding-bottom: 11rem
     @media screen and ( max-width: 750px )
-        padding: 2rem 0rem 
+        padding: 2rem 0rem 10rem
+
     .main-title
         color: $main_color
         font-weight: 500
@@ -117,7 +120,8 @@
         width: 100%
         pointer-events: none
         @media screen and ( max-width: 750px )
-            display: none
+            .vertical
+                display: none !important
 
         .icon_container
             direction: ltr
@@ -154,6 +158,7 @@
             .horizontal
                 display: flex
                 flex-direction: row
+                overflow: hidden
                 .icon
                     width: 100px
                     height: 100px
@@ -172,7 +177,12 @@
                         background-image: url('../img/icons/icon13.png')
                     &:nth-child(5)
                         background-image: url('../img/icons/icon5.png')
+                        @media screen and ( max-width:  750px )
+                            display: none
                     &:nth-child(6)
+                        @media screen and ( max-width:  750px )
+                            display: none
+                            
                         background-image: url('../img/icons/icon14.png')
                         flex: 1 1 auto
                         background-size: contain
@@ -197,7 +207,7 @@
                         @media screen and ( max-width: 860px )
                             font-size: 12px
                         @media screen and ( max-width: 764px )
-                            font-size: 10px
+                            font-size: 18px
                         span
                             display: flex
                             flex-direction: row-reverse
@@ -206,3 +216,10 @@
                                 color: $fifth_color
                     &:nth-child(8)
                         background-image: url('../img/icons/icon16.png')
+            .horizontal,.vertical
+                .icon
+                    @media screen and ( max-width: 977px  )
+                        width: 70px
+                        height: 70px
+                        min-width: 70px
+                        min-height: 70px
