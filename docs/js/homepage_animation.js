@@ -77,15 +77,15 @@ gsap.timeline({
     })
     .fromTo(afaqTweetSec.querySelector("h2"), { y: "100%", opacity: "0" }, { y: "0%", opacity: "1" })
     .fromTo(afaqTweetSec.querySelector(".qouat_container"), { y: "100%", opacity: "0" }, { y: "0%", opacity: "1" }, "-=0.5");
-// gsap.timeline({
-//         scrollTrigger: {
-//             trigger: eventDetailSec,
-//             start: "top bottom",
-//             end: "+=500 bottom",
-//             scrub: 2
-//         }
-//     })
-//     .fromTo(eventDetailSec.querySelector(".carousel"), { y: "100%", opacity: "0" }, { y: "0%", opacity: "1" }, "-=0.5");
+gsap.timeline({
+        scrollTrigger: {
+            trigger: eventDetailSec,
+            start: "top bottom",
+            end: "+=500 bottom",
+            scrub: 2
+        }
+    })
+    .fromTo(eventDetailSec.querySelector(".carousel"), { y: "100%", opacity: "0" }, { y: "0%", opacity: "1" }, "-=0.5");
 gsap.timeline({
         scrollTrigger: {
             trigger: tech_supportSec,
